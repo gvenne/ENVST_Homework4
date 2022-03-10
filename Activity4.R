@@ -18,7 +18,7 @@ weather$doy <- yday(weather$dateF)
 weather$year <- year(weather$dateF)
 
 # examine precipitation using a bar plot
-ggplot(data=weather[weather$doy > 121 & weather$doy < 274 ,],
+ggplot(data=weather[weather$doy > 121 & weather$doy < "181" ,],
        aes(x=dateF,
            y=Precip))+
   geom_col(color="royalblue4")+
